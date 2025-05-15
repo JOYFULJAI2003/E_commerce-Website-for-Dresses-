@@ -2,8 +2,25 @@
 <html>
     <head>
         <title>Apka Mart</title>
+
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+        <!-- Add custom AOS initialization -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                AOS.init();
+            });
+        </script>
     </head>
     <body>
         <div class="container-fluid">
@@ -11,131 +28,110 @@
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="index.html">Apka Mart</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="about.html">About us</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Items
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">For Mens</a></li>
-                                  <li><a class="dropdown-item" href="#">For Womens</a></li>
-                                  <li><a class="dropdown-item" href="#">For Kids</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Click here for more</a></li>
+                            <a class="navbar-brand" href="index.html">Apka Mart</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Items
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">For Mens</a></li>
+                                            <li><a class="dropdown-item" href="#">For Womens</a></li>
+                                            <li><a class="dropdown-item" href="#">For Kids</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Click here for more</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact us</a>
+                                    </li>
                                 </ul>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact us</a>
-                              </li>
-                            </ul>
-                            <form class="d-flex" role="search">
-                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                              <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
-                          </div>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
                         </div>
-                      </nav>
+                    </nav>
                 </div>
             </div>
+
+            <!-- Carousel Section -->
             <div class="row">
                 <div class="col-md-12">
-                    <div id="carouselExample" class="carousel slide">
+                    <div id="carouselExample" class="carousel slide" data-aos="fade-up">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/image1.webp" class="d-block w-100" alt="Carousel Image 1">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/image2.webp" class="d-block w-100" alt="Carousel Image 2">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/image3.webp" class="d-block w-100" alt="Carousel Image 3">
-                          </div>
+                            <div class="carousel-item active">
+                                <img src="images/image1.webp" class="d-block w-100" alt="Carousel Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/image2.webp" class="d-block w-100" alt="Carousel Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/image3.webp" class="d-block w-100" alt="Carousel Image 3">
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>                
+                    </div>
                 </div>
             </div>
-            <div class="row mt-5 mb-5">
-                <div class="col-md-6">
-                    <div class="col-md-8">
-                     <h2 class="text-dark text-uppercase">
-                        Lowest Prices <br>
-                        Best Quality Shopping
-                     </h2>
-                    </div>                   
-                </div>
-            </div>
+
+            <!-- Top Sales -->
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-danger text-center text-uppercase">Our Top Sales</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-left">
                     <div class="card">
                         <img src="images/image4.jpeg" class="card-img-top" alt="Card Image 1">
                         <div class="card-body">
-                          <h5 class="card-title">Stylish Men's Wear</h5>
-                          <p class="card-text">Affordable and high-quality stylish men's wear.</p>
-                          <a href="#" class="btn btn-primary">Buy Now</a>
+                            <h5 class="card-title">Stylish Men's Wear</h5>
+                            <p class="card-text">Affordable and high-quality stylish men's wear.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-up">
                     <div class="card">
                         <img src="images/image5.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body">
-                          <h5 class="card-title">Elegant Women's Wear</h5>
-                          <p class="card-text">Exclusive designs for women at unbeatable prices.</p>
-                          <a href="#" class="btn btn-primary">Buy Now</a>
+                            <h5 class="card-title">Elegant Women's Wear</h5>
+                            <p class="card-text">Exclusive designs for women at unbeatable prices.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="flip-right">
                     <div class="card">
                         <img src="images/image6.jpg" class="card-img-top" alt="Card Image 3">
                         <div class="card-body">
-                          <h5 class="card-title">Kids' Fashion</h5>
-                          <p class="card-text">Trendy and comfortable clothing for kids.</p>
-                          <a href="#" class="btn btn-primary">Buy Now</a>
+                            <h5 class="card-title">Kids' Fashion</h5>
+                            <p class="card-text">Trendy and comfortable clothing for kids.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
-                </div>             
+                </div>
             </div>
+
+            <!-- Footer Section -->
             <div class="row">
-                <div class="col-md-12"><img src="images/image7.webp" alt="Promotional Banner"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-light text-center text-uppercase bg-danger">
-                        The Style You Want..<br>
-                        The Quality You Expect...<br> 
-                        Only At Apka Mart.
-                    </h2>
-                 </div>
-            </div>
-            <div class="row">
-                 <div class="col-md-12 text-center text-light p-3 bg-dark">
-                     Copy Right © <script>document.write(new Date().getFullYear());</script>
-                 </div>
+                <div class="col-md-12 text-center text-light p-3 bg-dark" data-aos="fade-up">
+                    Copy Right © <script>document.write(new Date().getFullYear());</script>
+                </div>
             </div>
         </div>
     </body>
